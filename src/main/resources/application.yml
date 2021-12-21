@@ -1,0 +1,22 @@
+#server conf
+
+server:
+  port: 9000
+
+#spring conf
+
+spring:
+  #app conf
+  application:
+    name: api
+  #mysql conf
+  datasource:
+    url: jdbc:mysql://localhost:3306/noeldb
+      username: root
+      password: root
+      #jpa conf (genere ma base selon mes entités)
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
